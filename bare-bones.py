@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#just a comment :P
 import imaplib
 import pyglet
 import getpass
@@ -29,7 +30,7 @@ def check_for_new_mail():
 		update_new_stat.close()
 		last_sender = header['From']
 		last_subject = header['Subject']
-		last_date = header['Received'].split()[7:10]
+		last_date = header['Received'].split()[7:10]   
 		last_time = header['Received'].split()[10]
 	else :
 		last_mail = open('lastmail.txt','r')
